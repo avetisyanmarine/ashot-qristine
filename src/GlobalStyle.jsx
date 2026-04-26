@@ -2,7 +2,7 @@ import styled, { createGlobalStyle } from "styled-components";
 
 const GlobalStyle = createGlobalStyle`
 body {
-  background-color: #EFEFEF;
+  background-color: #fff;
   margin: 0;
   padding: 0;
   font-family: ArmenianDecorativeU-Italic;
@@ -35,7 +35,7 @@ body {
     font-weight: 100;
   }
   h1 {
-    font-size: 44px;
+    font-size: 42px;
     font-family: ArmAllegrou;
     color: #EFEFEF;
     font-weight: 100;

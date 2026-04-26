@@ -33,12 +33,12 @@ export const MusicPagePart = styled.div`
   position: fixed;
   z-index: 40;
   right: 20px;
-  top: 5vh;
+  bottom: 4.5vh;
   width: 60px;
   height: 60px;
-  background: #1e1e1e;
+  background: #000000;
   opacity: 0.95;
-  border-radius: 15px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -53,7 +53,7 @@ export const MusicPagePart = styled.div`
     position: absolute;
     right: calc(100% + 14px);
     top: 50%;
-    background: rgba(30, 30, 30, 0.95);
+    background: rgba(0, 0, 0, 0.95);
     color: #fff;
     padding: 10px 12px;
     border-radius: 8px;

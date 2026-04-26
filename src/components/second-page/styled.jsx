@@ -14,15 +14,14 @@ const GridDiv = styled(Flexible)`
   div {
     flex-direction: column;
     text-align: center;
-    border-right: 2px solid #1e1e1e;
-    padding: 4px 20px;
+    padding: 4px 15px;
+    h2 {
+      font-size: 42px;
+    }
     p {
-      font-size: 23px;
+      font-size: 20px;
       line-height: 12px;
     }
-  }
-  .uniqueBorder {
-    border: 0;
   }
 `;
 export { SecondPagePart, GridDiv };

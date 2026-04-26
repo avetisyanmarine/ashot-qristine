@@ -1,11 +1,17 @@
 import { SecondPagePart, GridDiv } from "./styled";
 import { Container, Flexible } from "../../GlobalStyle";
 import { useEffect, useState } from "react";
-import Photo2 from "../../assets/image/photo2.jpg";
+import Photo2 from "../../assets/image/serliqyser.png";
+import BlockImage from "../../assets/image/blockimage.jpg";
+import PhotoF1 from "../../assets/image/photof1.jpg";
+import PhotoGroup1 from "../../assets/image/groupphoto1.jpg";
+import PhotoGroup2 from "../../assets/image/groupphoto2.jpg";
+import PhotoGroup3 from "../../assets/image/groupphoto3.jpg";
 import { ThirdPagePartCalendar } from "../third-page/styled";
+import { TextShadow } from "../TextShadow";
 
 export const SecondPage = () => {
-  const weddingDate = new Date(2026, 2, 1, 0, 0, 0);
+  const weddingDate = new Date(2026, 4, 26, 0, 0, 0);
 
   const calculateTimeLeft = () => {
     const now = new Date();
@@ -36,18 +42,14 @@ export const SecondPage = () => {
   const formatNumber = (num) => String(num).padStart(2, "0");
 
   return (
-    <SecondPagePart className="my-10">
+    <SecondPagePart className="mb-10 mt-6">
       <Container>
         <div>
-          <h2 className="mb-10" data-aos="zoom-in" data-aos-offset="400">
+          <h2 className="mb-10" data-aos="zoom-in">
             Միջոցառմանը մնաց
           </h2>
           <GridDiv>
-            <Flexible
-              data-aos="flip-up"
-              data-aos-duration="900"
-              data-aos-delay="300"
-            >
+            <Flexible data-aos="flip-up">
               <h2>{formatNumber(timeLeft.days)}</h2>
               <p>Օր</p>
             </Flexible>
@@ -78,55 +80,57 @@ export const SecondPage = () => {
             </Flexible>
           </GridDiv>
         </div>
-        <h2 className="mt-10" data-aos="zoom-in" data-aos-offset="400">
-          Մարտ
+        <div className="mt-16 mb-7">
+          <TextShadow title="Սիրելի հյուրեր" />
+          <Flexible className="font-[500]">
+            <p className="text-[18px]">
+              Սիրով հրավիրում ենք Ձեզ ներկա գտնվելու մեր հարսանյաց հանդիսությանը
+              և կիսելու մեր ուրախությունը։
+            </p>
+          </Flexible>
+        </div>
+      </Container>
+      <Container>
+        <div className="flex h-[100vh] gap-[20px] justify-around">
+          <div>
+            <img src={Photo2} className="h-[100vh] w-full" />
+          </div>
+          <div className="flex flex-col gap-2">
+            <img src={PhotoGroup1} alt="" className="h-1/3 object-cover rounded-[10px]" />
+            <img src={PhotoGroup2} alt="" className="h-1/3 object-cover rounded-[10px]" />
+            <img src={PhotoGroup3} alt="" className="h-1/3 object-cover rounded-[10px]" />
+          </div>
+        </div>
+      </Container>
+      <Container>
+        <h2 className="mt-10" data-aos="zoom-in">
+          Հունիս
         </h2>
         <ThirdPagePartCalendar
           data-aos="fade-up"
-          data-aos-offset="400"
           data-aos-duration="600"
           data-aos-delay="300"
           className="mt-15"
         >
           {["Երկ", "Երք", "Չրք", "Հնգ", "Ուրբ", "Շբթ", "Կիր"].map((day) => (
             <div
-              className="font-bold text-center py-2 mb-3"
+              className="font-bold text-center py-2 mb-3 "
               style={{ fontSize: "16px" }}
             >
               {day}
             </div>
           ))}
           {[...Array(37)].map((_, i) =>
-            i > 5 && i <= 36 ? (
-              <div className={i - 5 == 1 ? "special" : ""}>{i - 5}</div>
+            i > -1 && i <= 29 ? (
+              <div className={i + 1 == 26 ? "special" : ""}>{i + 1}</div>
             ) : (
               <div className=""></div>
             ),
           )}
         </ThirdPagePartCalendar>
+        
+        <img src={PhotoF1} alt="" className="rounded-[15px] mt-[50px]" />
       </Container>
-      <div className="mt-10 mb-15">
-        <h2
-          className="mb-10"
-          data-aos="fade-up"
-          data-aos-offset="400"
-          data-aos-anchor-placement="top-bottom"
-          data-aos-duration="600"
-          data-aos-delay="300"
-        >
-          Սիրելի հյուրեր
-        </h2>
-        <Flexible className="w-full h-[147px] bg-white/45 px-4 font-[600]">
-          <p>
-            Սիրով հրավիրում ենք Ձեզ ներկա գտնվելու մեր հարսանյաց հանդիսությանը և
-            կիսելու մեր ուրախությունը։
-          </p>
-        </Flexible>
-      </div>
-      <img
-        src={Photo2}
-        className="w-full grayscale contrast-125 brightness-105"
-      />
     </SecondPagePart>
   );
 };
