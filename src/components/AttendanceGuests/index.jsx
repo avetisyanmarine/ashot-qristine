@@ -38,8 +38,7 @@ const AttendanceGuests = () => {
     const { name, value } = e.target;
     setFormData((prev) => ({
       ...prev,
-      [name]:
-        name === "guestCount" ? Math.max(0, parseInt(value) || 0) : value,
+      [name]: name === "guestCount" ? Math.max(0, parseInt(value) || 0) : value,
     }));
   };
 
@@ -97,7 +96,7 @@ const AttendanceGuests = () => {
 
     try {
       await fetch(
-        "https://script.google.com/macros/s/AKfycbwy3aY20SkJOoBjBmCacmnYS4ziZqJvmViSa0MaUwxXpKjbbGz2VmsT4LCy5_MMRM2FyA/exec",
+        "https://script.google.com/macros/s/AKfycbzz5hqDq1jSmUdyNkSTZ4XqKQg7B-WBeFiem6awRBLrfRvTgnBBY9qD_NwxgdT-c10P/exec",
         {
           method: "POST",
           mode: "no-cors",
@@ -184,8 +183,8 @@ const AttendanceGuests = () => {
           </Label>
           <OptionGrid>
             {[
-              { value: "Հարսի կողմից", label: "Հարսի կողմից"},
-              { value: "Փեսայի կողմից", label: "Փեսայի կողմից"},
+              { value: "Հարսի կողմից", label: "Հարսի կողմից" },
+              { value: "Փեսայի կողմից", label: "Փեսայի կողմից" },
             ].map((option) => (
               <OptionButton
                 key={option.value}
