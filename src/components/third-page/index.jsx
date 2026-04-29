@@ -19,7 +19,7 @@ export const ThirdPage = () => {
           <ThirdPageBlock
             // uniqueMargin={50}
             // imageSize={80}
-            number={"11:30"}
+            number={"12:00"}
             bigText="ՀԱՐՍԻ ՏՈՒՆ"
             smallText=" Ջրվեժ 10րդ փ. , տուն 3"
           />
