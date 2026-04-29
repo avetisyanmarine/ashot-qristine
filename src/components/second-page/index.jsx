@@ -4,14 +4,14 @@ import { useEffect, useState } from "react";
 import Photo2 from "../../assets/image/serliqyser.png";
 import BlockImage from "../../assets/image/blockimage.jpg";
 import PhotoF1 from "../../assets/image/photof1.jpg";
-import PhotoGroup1 from "../../assets/image/groupphoto1.jpg";
-import PhotoGroup2 from "../../assets/image/groupphoto2.jpg";
-import PhotoGroup3 from "../../assets/image/groupphoto3.jpg";
+import PhotoGroup1 from "../../assets/image/groupphoto1.PNG";
+import PhotoGroup2 from "../../assets/image/groupphoto2.JPG";
+import PhotoGroup3 from "../../assets/image/groupphoto3.JPG";
 import { ThirdPagePartCalendar } from "../third-page/styled";
 import { TextShadow } from "../TextShadow";
 
 export const SecondPage = () => {
-  const weddingDate = new Date(2026, 4, 26, 0, 0, 0);
+  const weddingDate = new Date(2026, 5, 7, 0, 0, 0);
 
   const calculateTimeLeft = () => {
     const now = new Date();
@@ -122,7 +122,7 @@ export const SecondPage = () => {
           ))}
           {[...Array(37)].map((_, i) =>
             i > -1 && i <= 29 ? (
-              <div className={i + 1 == 26 ? "special" : ""}>{i + 1}</div>
+              <div className={i + 1 == 7 ? "special" : ""}>{i + 1}</div>
             ) : (
               <div className=""></div>
             ),

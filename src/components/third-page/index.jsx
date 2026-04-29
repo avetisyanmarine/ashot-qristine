@@ -18,30 +18,24 @@ export const ThirdPage = () => {
         <TextShadow title="Ժամանակացույց" />
         <ThirdPagePartContext>
           <ThirdPageBlock
-            // imageSize={80}
-            number={"13:00"}
-            bigText="ՓԵՍԱՅԻ ՏՈՒՆ"
-            smallText="Այստեղ կարող է լինել Ձեր հասցեն"
-          />
-          <ThirdPageBlock
             // uniqueMargin={50}
             // imageSize={80}
-            number={"13:30"}
+            number={"11:30"}
             bigText="ՀԱՐՍԻ ՏՈՒՆ"
-            smallText="Այստեղ կարող է լինել Ձեր հասցեն"
+            smallText=" Ջրվեժ 10րդ փ. , տուն 3"
           />
           <ThirdPageBlock
             // uniqueMargin={50}
             imageSize={80}
-            number={"14:30"}
+            number={"14:00"}
             bigText="ՊՍԱԿԱԴՐՈՒԹՅՈՒՆ"
-            smallText="Այստեղ կարող է լինել Ձեր հասցեն"
+            smallText="Սուրբ Սարգիս եկեղեցի"
           />
           <ThirdPageBlock
             // imageSize={80}
-            number={"17:30"}
+            number={"17:00"}
             bigText="ՀԱՐՍԱՆՅԱՑ ՀԱՆԴԻՍՈՒԹՅՈՒՆ"
-            smallText="Նոր Դվին Ռեստորան"
+            smallText="Մկրտչյանս Հոլլ"
           />
         </ThirdPagePartContext>
         <ThirdPagePartMini>
