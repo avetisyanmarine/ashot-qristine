@@ -4,9 +4,8 @@ import { ForthPagePart, ForthPagePartContext } from "./styled";
 import Church from "../../assets/image/church.jpg";
 import Restaurant from "../../assets/image/restaurant.jpg";
 import HeartLine from "../../assets/image/heartline.png";
-import Photo3 from "../../assets/image/examp2.jpg";
-import Bant from "../../assets/image/bant.png";
 import LineAes from "../../assets/image/lineaes.png";
+import AttendanceGuests from "../AttendanceGuests/index";
 
 export const ForthPage = () => {
   return (
@@ -48,6 +47,9 @@ export const ForthPage = () => {
         </Flexible>
         <hr className="mx-auto my-8 w-[300px]" />
       </div>
+      <Container>
+        <AttendanceGuests />
+      </Container>
     </ForthPagePart>
   );
 };

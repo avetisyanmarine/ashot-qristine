@@ -2,7 +2,6 @@ import { SecondPagePart, GridDiv } from "./styled";
 import { Container, Flexible } from "../../GlobalStyle";
 import { useEffect, useState } from "react";
 import Photo2 from "../../assets/image/serliqyser.png";
-import BlockImage from "../../assets/image/blockimage.jpg";
 import PhotoF1 from "../../assets/image/photof1.jpg";
 import PhotoGroup1 from "../../assets/image/groupphoto1.PNG";
 import PhotoGroup2 from "../../assets/image/groupphoto2.JPG";

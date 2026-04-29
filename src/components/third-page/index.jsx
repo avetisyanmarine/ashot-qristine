@@ -5,7 +5,6 @@ import {
   ThirdPagePartMini,
 } from "./styled";
 import { Container } from "../../GlobalStyle";
-import Haverjutyun from "../../assets/image/haverjutyun.png";
 import Church from "../../assets/image/church.png";
 import Kenac from "../../assets/image/kenac.png";
 import { ThirdPageBlock } from "./third-page-block";
