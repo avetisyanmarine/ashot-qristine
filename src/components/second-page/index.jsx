@@ -3,9 +3,9 @@ import { Container, Flexible } from "../../GlobalStyle";
 import { useEffect, useState } from "react";
 import Photo2 from "../../assets/image/serliqyser.png";
 import PhotoF1 from "../../assets/image/photof1.jpg";
-import PhotoGroup1 from "../../assets/image/groupphoto1.PNG";
-import PhotoGroup2 from "../../assets/image/groupphoto2.JPG";
-import PhotoGroup3 from "../../assets/image/groupphoto3.JPG";
+import PhotoGroup1 from "../../assets/image/groupphoto1.png";
+import PhotoGroup2 from "../../assets/image/groupphoto2.jpg";
+import PhotoGroup3 from "../../assets/image/groupphoto3.jpg";
 import { ThirdPagePartCalendar } from "../third-page/styled";
 import { TextShadow } from "../TextShadow";
 
